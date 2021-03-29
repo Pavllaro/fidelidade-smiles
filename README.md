@@ -18,3 +18,7 @@ Com isso o desafio é: Como um programa de fidelidade pode contribuir para que a
 - UI com seleção de ítens a serem comprados.
 - Usuário pode selecionar e deselecionar ítems.
 - Os itens e preços são salvados ao local storage
+
+## Live demo
+
+URL here: http://grey-cause.surge.sh/

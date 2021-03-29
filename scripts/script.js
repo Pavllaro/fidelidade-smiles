@@ -70,6 +70,7 @@ container.addEventListener('click', (e) => {
 
 sendSMSButton.addEventListener('click', (e) => {
     const text = document.getElementById('text').innerText;
+    alert(response.data);
     axios
         .post('http://127.0.0.1:8080/sendSms', { text: text })
         .then(function (response) {
