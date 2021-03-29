@@ -1,0 +1,133 @@
+:root {
+    --main-bg-color: rgb(243, 122, 31);
+    --main-text-color: #444451;
+    --secondary-bg-color: white;
+    --item-bg-color: rgba(243, 122, 31, 0.1);
+    --item-selected: #42a6c6;
+    font-family: 'Nunito', arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header {
+    color: var(--secondary-bg-color);
+    font-size: 1em;
+}
+
+select {
+    padding: 5px;
+    border-radius: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: var(--main-bg-color);
+}
+
+main {
+    color: var(--main-text-color);
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.5em;
+    border-radius: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1rem;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    overflow-anchor: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+
+    background-color: var(--item-bg-color);
+    border-radius: 5px;
+    border-bottom: 2px solid var(--main-text-color);
+}
+
+.item.selected {
+    background-color: var(--item-selected);
+    color: white;
+}
+
+.row {
+    display: flex;
+}
+
+p.text span {
+    color: #f37a1f;
+}
+
+button {
+    background-color: var(--main-bg-color);
+    color: var(--secondary-bg-color);
+    height: 60px;
+    border: none;
+    padding: 5%;
+    border-radius: 32px;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+
+    font-size: 0.8em;
+    line-height: 0;
+}
+
+.smilesLogo {
+    bottom: 0;
+    width: 128px;
+    left: 0;
+    right: 0;
+    margin-top: 128px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+@media only screen and (min-height: 768px)
+{
+    .smilesLogo
+    {
+        margin-top: 128px;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        color: var(--secondary-bg-color);
+        font-size: 1.2em;
+    }
+
+    main {
+        margin: 0 20% 0 20%;
+    }
+
+    button {
+        padding: 6%;
+        font-size: 1.1em;
+    }
+}
